@@ -102,9 +102,7 @@ a.navbar-brand{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    box-shadow: 4px 5px 1px 0px #35304D; 
-    text-shadow:0px 1px 0px #6C55DF;
-    background:linear-gradient(to bottom, #6C55DF 5%, #6C55DF 100%);
+  
 }
 
 .home-left>.scroll{
@@ -116,6 +114,7 @@ a.navbar-brand{
     font-weight: 600;
     line-height: normal;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .home-left>.scroll::after{
@@ -207,6 +206,11 @@ h1.Project{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.myway-right>.myway-btn:hover,
+.home-left>.home-btn:hover
+{
     box-shadow: 4px 5px 1px 0px #35304D; 
     text-shadow:0px 1px 0px #6C55DF;
     background:linear-gradient(to bottom, #6C55DF 5%, #6C55DF 100%);
@@ -261,6 +265,20 @@ p#contact-message.contact-message{
     color: green;
 }
 
+button.btn.btn-primary{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #6C55DF;
+    color: #FFF;
+    font-family: Noir Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 @media only screen and (max-width: 1400px) and (min-width: 200px) {
     .home-left>p{
         width: 350px;
@@ -282,5 +300,8 @@ p#contact-message.contact-message{
     }
     h1.experience{
         margin-right: 50px;
+    }
+    button.btn.btn-primary{
+        width: 100%;
     }
 }
