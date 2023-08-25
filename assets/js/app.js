@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   const downloadBtn = document.querySelector(".myway-btn");
-  const fileLink = "https://drive.google.com/uc?export=download&id=1ftDcZ_TuoUeTb8DyaEnimO1wUV8Hc-hl";
+  const fileLink = "https://drive.google.com/uc?export=download&id=1q4j9ctbSu1hO3Go889fbLQzGYnMRK9hZ";
   const initTimer = () => {
       if(downloadBtn.classList.contains("disable-timer")) {
           return location.href = fileLink;
