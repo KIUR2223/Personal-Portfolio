@@ -4,7 +4,6 @@
 :root {
     --dark: #000;
     --light: #fff;
-    --first-color: hsl(var(--hue-color), 69%, 61%);
 }
 
 * {
@@ -130,6 +129,7 @@ a.navbar-brand{
 
 #myway{
     margin-bottom: 200px;
+    cursor: pointer;
 }
 
 .myway-title{
@@ -212,31 +212,53 @@ h1.Project{
     background:linear-gradient(to bottom, #6C55DF 5%, #6C55DF 100%);
 }
 
-.skills-title>.skills-subtitle{
+ h2.section-title{
     display: flex;
-    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    color: #312055;
+    font-family: Noir Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.skills-content, 
+.skills-group{
+    display: grid;
+}
+.skills-content{
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: baseline;
+}
+.skills-group{
+    row-gap: 1rem;
+    list-style: decimal-leading-zero;
     cursor: pointer;
 }
-
-.skilss-container{
-    row-gap: 0;
+.skill-item{
+    font-weight: 500;
+    color: var(--dark);
 }
 
-.skilss-header{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    cursor: pointer;
+.skill-item::marker{
+    color: #6C55DF;
 }
 
-.skilss-icon,
-.skills-arrow{
-    font-size: 2rem;
-    color: var(--first-color);
+.contact>h2{
+    color: #312055;
+    font-family: Noir Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-.skills-icon{
-    margin-right: .75rem;
+p#contact-message.contact-message{
+    color: green;
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 200px) {
@@ -254,5 +276,11 @@ h1.Project{
     .home-left>.scroll::after{
         font-size: 14px;
         margin-left: 10px;
+    }
+    .myway-right>.myway-p{
+        width: 350px;
+    }
+    h1.experience{
+        margin-right: 50px;
     }
 }
